@@ -1,0 +1,277 @@
+/* 
+    Created on : May 5, 2019, 4:45:16 PM
+    Author     : christianachacoso
+*/
+
+#Space{
+    width: 100%;
+    height: 1250px;
+    background-image: url(images/Space.jpg);
+    background-size: inherit;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#earth{
+    width: 100%;
+    height: 1000px;
+    background-image: url(images/Earth.jpg);
+    background-size: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.background{
+    background-color: lightskyblue;
+    width: 100%;
+}
+.background1{
+    background-color: ghostwhite;
+}
+
+.white-text{
+    color: white;
+}
+
+.sansSerif-text{
+    font-family: sans-serif;
+}
+
+.mono{
+    font-family: monospace;
+    font-size: large;
+}
+
+.bold-text{
+    font-weight:bold;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered1{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+}
+.centered2{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-bottom{
+    position: absolute;
+    top: 220%;
+}
+.centered-left{
+    position: absolute;
+    top: 230%;
+    right: 65%;
+}
+.centered-right{
+    position: absolute;
+    top: 230%;
+    left: 65%;
+}
+.centered-middle{
+    position: absolute;
+    top: 320%;
+    text-align: center;
+    color: yellowgreen;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    left: 43%;
+}
+.centered-text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: ghostwhite;
+}
+.centered-text0{
+    text-align: center;
+    color: white;
+}
+.centered-text1{
+    text-align: center;
+    color: orange;
+}
+.centered-text2{
+    text-align: center;
+    color: black;
+}
+.centered-text3{
+    text-align: center;
+    color: yellowgreen;
+}
+
+.black-text{
+    color: black;
+}
+
+.fade-in{
+    opacity:0;
+}
+
+.content-block{
+    display: inline-block;
+    width: 75%;
+    height: 550px;
+    border-radius: 10%;
+    left: 1.5%;
+}
+
+.project-block{
+    display: inline-block;
+    width: 75%;
+    height: 75%;
+    border-radius: 10%;
+}
+.projectleft-block{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    top: 25%;
+}
+.projectright-block{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    bottom: 25%;
+}
+
+.margin-right{
+    margin-right: 20%;
+}
+.margin-left{
+    margin-left: 20%;
+}
+
+.profile{
+    border-radius: 75%;
+}
+.linkedin{
+    width: 75px;
+    height: 75px;
+    border-radius: 75%;
+}
+.gmail{
+    width: 75px;
+    height: 75px;
+    border-radius: 75%;
+}
+.facebook{
+    width: 75px;
+    height: 75px;
+    border-radius: 75%;
+}
+.github{
+    width: 75px;
+    height: 75px;
+    border-radius: 75%;
+}
+.yahoo{
+    width: 75px;
+    height: 75px;
+    border-radius: 75%;
+}
+.resume{
+    width: 300px;
+    height: 300px;
+    border-radius:10%;
+}
+
+.dictionary{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
+.calculator{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+
+/* Back to Top */
+#top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#top:hover {
+  background-color: beige;
+}
+
+/*Questions*/
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: lightskyblue;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightblue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: lightslategray;
+  padding: 20px;
+}
+
+.container0{
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.container1{
+    background-color: black;
+    padding: 50px;
+}
+
+.parallax {
+  background-image: url(images/Land.jpg);
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, html{
+    height: 1350px;
+}
