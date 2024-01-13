@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Christian Achacoso</title>
         <link href="index.css" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Hello World!</h1>
+        <div class="nav-bar">
+            <nav>
+
+            </nav>
+        </div>
+        <h1>Hello World!<br /> I'm
+        <AnimatedLetters letterClass={letterClass}
+        strArray={nameArray}
+        idx={16}/>
+        <br />
+        <AnimatedLetters letterClass={letterClass}
+        strArray={jobArray}
+        idx={19}/>
+        </h1>
+        <h2>Computer Science Graduate</h2>
     </body>
+
+    <script src="scripts/AnimatedLetters.js">
+        const [letterClass, setLetterClass] = useState('text-animate')
+        const nameArray = " Christian Achacoso".split("")
+        const jobArray = "Software Engineer".split("")
+
+        useEffect(() => {
+            setTimeout (() => {
+                return setLetterClass('text-animate-hover')
+            }, 4000)
+        }, [])
+    </script>
 </html>
