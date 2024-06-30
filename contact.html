@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="contact.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- <div class="dark-mode-button">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+        </label>
+    </div> -->
+
+    <div class="nav-bar nav-center">
+        <nav>
+            <link>
+                <a href="index.html" class="home">
+                    HOME
+                </a>
+            </link>
+            <link>
+                <a href="about.html" class="about-link">
+                    ABOUT
+                </a>
+            </link>
+            <link>
+                <a href="contact.html" class="active contact-link">
+                    CONTACT
+                </a>
+            </link>
+        </nav>
+    </div>
+
+    <div class='container contact-page'>
+        <div class='text-zone'>
+            <h1>
+                Contact Me
+            </h1>
+            <p>
+                I am interested in opportunities as a 
+                <br />
+                Software Engineer, Front End Developer, UI/UX Designer, Data Scientist and Software Quality Assurance. 
+                <br />
+                <br />
+                Feel free to contact me using the form below!
+            </p>
+
+            <div class='contact-form'>
+                <form ref= {refForm} onSubmit={sendEmail}>
+                    <ul>
+                        <li class="half">
+                            <input type="text" name="name" placeholder="Name" required />
+                        </li>
+                        <li class="half">
+                            <input type="email" name="email" placeholder="Email" required />
+                        </li>
+                        <li>
+                            <input placeholder="Subject" type="text" name="subject" required />
+                        </li>
+                        <li>
+                            <textarea placeholder="Message" name="message" required></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" class="flat-button" value="SEND" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="containerWheel">
+        <div id="wheel">
+            <figure><img src="images\Heatmap.jpeg" alt=""></figure>
+            <figure><img src="images\ldavariance.jpeg" alt=""></figure>
+            <figure><img src="images\pairwise.jpeg" alt=""></figure>
+            <figure><img src="images\pca.JPG" alt=""></figure>
+            <figure><img src="images\pcavslda.JPG" alt=""></figure>
+            <figure><img src="images\scatterwithouttsne.jpeg" alt=""></figure>
+            <figure><img src="images\scatterwithtsne.jpeg" alt=""></figure>
+        </div>
+    </div> -->
+
+</body>
+
+<script>    
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+
+const refForm = useRef()
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+        .sendForm(
+            'service_z2n8uzu',
+            'template_mquqpkd',
+            refForm.current,
+            '7P2pquXD4Jnp3ytMp'
+        )
+        .then(
+            () => {
+                alert('Your message has been sent!')
+                window.location.reload(false)
+            },
+            () => alert('Failed to send your message, please try again.')
+        )
+}
+</script>
+<script src="scripts.js"></script>
+</html>

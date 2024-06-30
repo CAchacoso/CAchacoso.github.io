@@ -8,32 +8,55 @@
     </head>
 
     <body>
-        <div class="nav-bar">
+        
+        <!-- <div class="dark-mode-button">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div> -->
+        
+        <div class="nav-bar nav-center">
             <nav>
-
+                <link>
+                    <a href="index.html" class=active>
+                        HOME
+                    </a>
+                </link>
+                <link>
+                    <a href="about.html" class="about-link">
+                        ABOUT
+                    </a>
+                </link>
+                <link>
+                    <a href="contact.html" class="contact-link">
+                        CONTACT
+                    </a>
+                </link>
             </nav>
         </div>
-        <h1>Hello World!<br /> I'm
-        <AnimatedLetters letterClass={letterClass}
-        strArray={nameArray}
-        idx={16}/>
-        <br />
-        <AnimatedLetters letterClass={letterClass}
-        strArray={jobArray}
-        idx={19}/>
-        </h1>
-        <h2>Computer Science Graduate</h2>
+        
+        <div class="container home-page">
+            <div class="text-zone w3-animate-top">
+                <h1>Hello World!
+                <br />
+                Christian Achacoso
+                </h1>
+                <h2>Computer Science Graduate
+                    <br />
+                    Nuro Command Center Operator             
+                </h2>
+                
+            </div>
+        </div>
+
+        <!-- <div>
+            <img src="C:\Users\Christian Achacoso\Documents\GitHub\CAchacoso.github.io\images\SF State Banner.png">
+        </div> -->
+        
     </body>
 
-    <script src="scripts/AnimatedLetters.js">
-        const [letterClass, setLetterClass] = useState('text-animate')
-        const nameArray = " Christian Achacoso".split("")
-        const jobArray = "Software Engineer".split("")
-
-        useEffect(() => {
-            setTimeout (() => {
-                return setLetterClass('text-animate-hover')
-            }, 4000)
-        }, [])
-    </script>
+    <script src="scripts.js"></script>
 </html>

@@ -1,0 +1,442 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+    color: #444;
+    background: rgb(8, 126, 180);
+    overflow: hidden;
+    display: block;
+    transition: background 0.2s linear;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: 1;
+    animation-fill-mode: forwards;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+  /* Fonts */
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./fonts/helvetica-neu.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./fonts/LaBelleAurore.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Coolvetica';
+    src: url('./fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  }
+  /* Fonts */
+
+.contact-page {
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #ffd700;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            animation: fadeInDown 1s;
+            animation-timing-function: ease-in;
+
+            &::before {
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+                
+                &::after{
+                    font-family: 'La Belle Aurore';
+                    font-size: 18px;
+                    line-height: 18px;
+                    position: absolute;
+                    left: -30px;
+                    bottom: -20px;
+                    margin-left: 20px;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-style: 13px;
+            color: #fff;
+            font-family: 'Coolvetica';
+            font-weight: 300;
+            min-width: fit-content;
+            animation: fadeInDown 1s;
+            animation-timing-function: ease-in;
+        }
+    }
+}
+
+/* Contact Form */
+
+.contact-form {
+    width: 100%;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        top: 100%;
+
+        li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 1.5s 1s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        input[type='text'],
+        input[type='email'] {
+            width: 100%;
+            border: 0;
+            background: #93d9ff;
+            height: 50px;
+            font-family: 'Coolvetica';
+            font-size: 16px;
+            color: #000000;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+
+        textarea {
+            width: 100%;
+            border: 0;
+            background: #93d9ff;
+            height: 50px;
+            font-family: 'Coolvetica';
+            font-size: 16px;
+            color: #000000;
+            padding: 20px;
+            min-height: 150px;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+
+        .flat-button {
+            color: #ffd700;
+            background: 0 0;
+            font: 11px;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 8px 10px;
+            border: 1px solid #ffd700;
+            float: right;
+            border-radius: 4px;
+
+            &:hover {
+                color: #115173;
+                background: #ffd700;
+            }
+        }
+
+    }
+
+    
+}
+
+/* Contact Form */
+
+/* Navigation Bar */
+
+.nav-center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.nav-bar{
+    width: 45%;
+    top: 25px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    background: rgba(0, 107, 150);
+    
+    nav{
+        display: inline-flex;
+        text-align: center;
+        justify-content: space-evenly;
+        position: relative;
+        top: 50%;
+        width: 100%;
+
+        a{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 1000;
+            color: #ffd700;
+            display: block;
+            line-height: 75px;
+            height: 75px;
+            position: relative;
+            text-decoration: none;
+            width: 250px;
+
+            i{
+                transition: all -0.3s ease-out;
+            }
+
+            &:hover {
+                background: rgb(0, 129, 180);
+                color: #ffd700;
+                svg{
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3 ease-out;
+            }
+        }
+        a.active{
+            background: rgb(0, 129, 180);
+            color: #ffd000;
+            font-weight: 900;
+        }
+    }
+}
+    ul{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        
+
+        li{
+            a{
+                padding: 10px 0;
+                display: block;
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                line-height: 16px;
+
+                &:hover {
+                    color: #ffd700;
+                }
+            }
+        }
+    }
+
+/* Navigation Bar */
+
+/* Toggle Dark Mode */
+
+body.dark {
+    background: rgb(0, 71, 104);
+    color: white;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label{
+    background-color: #353535;
+    width: 50px;
+    height: 30px;
+    top: 2%;
+    left: 95%;
+    z-index: 2;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label .ball{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 3px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball{
+    transform: translateX(24px);
+    background-color: white;
+}
+/* Toggle Dark Mode */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes fadeInRight{
+    from{
+        opacity: 0;
+        transform: translate3d(-40px,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-40px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+/* Ferris Wheel */
+
+.containerWheel {
+    left: 70%;
+    top: 35%;
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	perspective: 1000px;
+}
+
+#wheel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: flat;
+	animation: orbital 1s infinite linear;
+}
+
+#wheel:hover{
+	animation-play-state: paused;
+    transform: scale(1.5, 1.5);
+}
+
+#wheel figure{
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 120px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 2px black;
+}
+
+#wheel figure:hover{
+    transform: scale(1.5, 1.5);
+}
+
+#wheel figure:nth-child(1) { transform: orbitX(0px) orbitY(0px);}
+#wheel figure:nth-child(2) { transform: orbitX(30px) orbitY(30px);}
+#wheel figure:nth-child(3) { transform: orbitX(60px) orbitY(60px);}
+#wheel figure:nth-child(4) { transform: orbitX(90px) orbitY(90px);}
+#wheel figure:nth-child(5) { transform: orbitX(120px) orbitY(120px);}
+#wheel figure:nth-child(6) { transform: orbitX(150px) orbitY(150px);}
+#wheel figure:nth-child(7) { transform: orbitX(180px) orbitY(180px);}
+
+img{
+	cursor: pointer;
+	transition: all .5s ease;
+    width: 240px;
+    height: auto;
+    position: absolute;
+    align-content: center;
+}
+
+img:hover{
+    transform: scale(1.2,1.2);
+}
+
+@keyframes orbital{
+	from{
+		transform: orbitX(0px);
+	}
+	to{
+		transform: orbitX(360px);
+	}
+}
+
+/* Ferris Wheel */
