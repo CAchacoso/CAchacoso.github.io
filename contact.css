@@ -6,13 +6,10 @@ html {
     margin: 0;
     font: 300 11px/1.4 'Helvetica Neue', sans-serif;
     color: #444;
-    background: rgb(8, 126, 180);
-    overflow: hidden;
+    background: #a2ecff;
+    overflow: scroll;
     display: block;
     transition: background 0.2s linear;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: 1;
     animation-fill-mode: forwards;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,7 +18,6 @@ html {
   .page{
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 
   /* Fonts */
@@ -45,7 +41,7 @@ html {
     .text-zone{
         position: absolute;
         left: 10%;
-        top: 40%;
+        top: 35%;
         transform: translateY(-50%);
         width: 35%;
         vertical-align: middle;
@@ -57,39 +53,19 @@ html {
             font-family: 'Coolvetica';
             color: #ffd700;
             font-weight: 400;
+            text-shadow: 3px 3px 3px #0000005c;
             margin-top: 0;
             position: relative;
             margin-bottom: 40px;
             left: 10px;
             animation: fadeInDown 1s;
             animation-timing-function: ease-in;
-
-            &::before {
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-top: -10px;
-                left: -10px;
-                opacity: 0.6;
-                line-height: 18px;
-                
-                &::after{
-                    font-family: 'La Belle Aurore';
-                    font-size: 18px;
-                    line-height: 18px;
-                    position: absolute;
-                    left: -30px;
-                    bottom: -20px;
-                    margin-left: 20px;
-                    opacity: 0.6;
-                }
-            }
         }
 
         p {
             font-size: 20px;
             font-style: 13px;
-            color: #fff;
+            color: #000000;
             font-family: 'Coolvetica';
             font-weight: 300;
             min-width: fit-content;
@@ -162,18 +138,17 @@ html {
         }
 
         .flat-button {
-            color: #ffd700;
-            background: 0 0;
+            color: #000000;
+            background: #ffd700;
             font: 11px;
             letter-spacing: 3px;
             text-decoration: none;
             padding: 8px 10px;
-            border: 1px solid #ffd700;
             float: right;
-            border-radius: 4px;
+            border-radius: 3px;
 
             &:hover {
-                color: #115173;
+                color: #ffffff;
                 background: #ffd700;
             }
         }
@@ -189,16 +164,14 @@ html {
 
 .nav-center{
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    width: auto;
+    padding-top: 25px;
+
 }
 .nav-bar{
-    width: 45%;
-    top: 25px;
+    width: 100%;
     margin: auto;
-    padding: 10px;
     position: relative;
-    background: rgba(0, 107, 150);
     
     nav{
         display: inline-flex;
@@ -207,25 +180,27 @@ html {
         position: relative;
         top: 50%;
         width: 100%;
+        box-shadow: 2px #000000;
 
         a{
+            font-family: 'Helvetica Neue';
             font-size: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 1000;
-            color: #ffd700;
+            font-weight: 750;
+            text-shadow: 2px 2px 2px #00000050;
+            color: #ffffff;
             display: block;
-            line-height: 75px;
-            height: 75px;
+            line-height: 50px;
+            height: 50px;
             position: relative;
             text-decoration: none;
-            width: 250px;
+            width: 100px;
 
             i{
                 transition: all -0.3s ease-out;
             }
 
             &:hover {
-                background: rgb(0, 129, 180);
+                font-weight: 1000;
                 color: #ffd700;
                 svg{
                     opacity: 0;
@@ -250,9 +225,9 @@ html {
             }
         }
         a.active{
-            background: rgb(0, 129, 180);
+            font-weight: 1000;
+            text-decoration: underline;
             color: #ffd000;
-            font-weight: 900;
         }
     }
 }
