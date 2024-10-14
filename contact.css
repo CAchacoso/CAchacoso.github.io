@@ -6,10 +6,11 @@ html {
     margin: 0;
     font: 300 11px/1.4 'Helvetica Neue', sans-serif;
     color: #444;
-    background: #a2ecff;
+    background-image: linear-gradient(rgb(156, 224, 255), rgb(226, 243, 252));
+    background-color: rgb(156, 224, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: scroll;
-    display: block;
-    transition: background 0.2s linear;
     animation-fill-mode: forwards;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -41,7 +42,7 @@ html {
     .text-zone{
         position: absolute;
         left: 10%;
-        top: 35%;
+        top: 50%;
         transform: translateY(-50%);
         width: 35%;
         vertical-align: middle;
@@ -50,7 +51,7 @@ html {
 
         h1 {
             font-size: 53px;
-            font-family: 'Coolvetica';
+            font-family: "Audiowide";
             color: #ffd700;
             font-weight: 400;
             text-shadow: 3px 3px 3px #0000005c;
@@ -58,18 +59,17 @@ html {
             position: relative;
             margin-bottom: 40px;
             left: 10px;
-            animation: fadeInDown 1s;
+            animation: fadeIn 1s;
             animation-timing-function: ease-in;
         }
 
         p {
             font-size: 20px;
-            font-style: 13px;
             color: #000000;
-            font-family: 'Coolvetica';
-            font-weight: 300;
+            font-family: "Trirong";
+            font-weight: 500;
             min-width: fit-content;
-            animation: fadeInDown 1s;
+            animation: fadeIn 1s;
             animation-timing-function: ease-in;
         }
     }
@@ -94,7 +94,8 @@ html {
             display: block;
             position: relative;
             opacity: 0;
-            animation: fadeInUp 1.5s 1s;
+            animation: fadeIn 1s;
+            animation-timing-function: ease-in-out;
             animation-fill-mode: forwards;
             clear: both;
         }
@@ -113,9 +114,9 @@ html {
         input[type='email'] {
             width: 100%;
             border: 0;
-            background: #93d9ff;
+            background: #ffffff;
             height: 50px;
-            font-family: 'Coolvetica';
+            font-family: "Audiowide";
             font-size: 16px;
             color: #000000;
             padding: 0 20px;
@@ -126,9 +127,9 @@ html {
         textarea {
             width: 100%;
             border: 0;
-            background: #93d9ff;
+            background: #ffffff;
             height: 50px;
-            font-family: 'Coolvetica';
+            font-family: "Audiowide";
             font-size: 16px;
             color: #000000;
             padding: 20px;
@@ -140,7 +141,7 @@ html {
         .flat-button {
             color: #000000;
             background: #ffd700;
-            font: 11px;
+            font: 20px;
             letter-spacing: 3px;
             text-decoration: none;
             padding: 8px 10px;
@@ -148,8 +149,8 @@ html {
             border-radius: 3px;
 
             &:hover {
-                color: #ffffff;
-                background: #ffd700;
+                color: #000000;
+                background: yellow;
             }
         }
 
@@ -165,13 +166,19 @@ html {
 .nav-center{
     margin: auto;
     width: auto;
-    padding-top: 25px;
-
+    padding-top: 10px;
 }
 .nav-bar{
-    width: 100%;
+    width: 40%;
     margin: auto;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    border-color: black;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px black;
     
     nav{
         display: inline-flex;
@@ -180,20 +187,20 @@ html {
         position: relative;
         top: 50%;
         width: 100%;
-        box-shadow: 2px #000000;
 
         a{
-            font-family: 'Helvetica Neue';
+            font-family: "Audiowide";
             font-size: 20px;
-            font-weight: 750;
-            text-shadow: 2px 2px 2px #00000050;
-            color: #ffffff;
+            font-weight: 500;
+            text-shadow: 3px 3px 3px #00000050;
+            color: rgb(0, 0, 0);
             display: block;
             line-height: 50px;
             height: 50px;
             position: relative;
             text-decoration: none;
             width: 100px;
+            padding: 15px;
 
             i{
                 transition: all -0.3s ease-out;
@@ -231,33 +238,51 @@ html {
         }
     }
 }
-    ul{
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        
-
-        li{
-            a{
-                padding: 10px 0;
-                display: block;
-                font-family: 'La Belle Aurore';
-                font-size: 20px;
-                line-height: 16px;
-
-                &:hover {
-                    color: #ffd700;
-                }
-            }
-        }
-    }
 
 /* Navigation Bar */
+
+/* Social Media */
+.socialMedia{
+    top: 35%;
+    left: 60%;
+    position: absolute;
+    display: table-column;
+    animation: fadeIn 1s;
+    animation-timing-function: ease-in-out;
+
+    h2 {
+        font-size: 22px;
+        font-family: "Audiowide";
+        font-weight: 10;
+        color: black;
+        text-shadow: 1px 1px 1px #0000005c;
+        margin-top: 0;
+        position: relative;
+        animation: fadeIn 1s;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+.img {
+    position: relative;
+    justify-content: space-between;
+}
+
+#email {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+#gmail {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+}
+#linkedin {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
 
 /* Toggle Dark Mode */
 
@@ -333,6 +358,17 @@ body.dark {
     }
 }
 
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+        transform: translate3d(40px,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 @keyframes fadeInDown{
     from{
         opacity: 0;
@@ -343,75 +379,3 @@ body.dark {
         transform: translate3d(0,0,0);
     }
 }
-
-/* Ferris Wheel */
-
-.containerWheel {
-    left: 70%;
-    top: 35%;
-	width: 250px;
-	height: 150px;
-	position: absolute;
-	perspective: 1000px;
-}
-
-#wheel{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform-style: flat;
-	animation: orbital 1s infinite linear;
-}
-
-#wheel:hover{
-	animation-play-state: paused;
-    transform: scale(1.5, 1.5);
-}
-
-#wheel figure{
-	display: block;
-	position: absolute;
-	width: 180px;
-	height: 120px;
-	left: 10px;
-	top: 10px;
-	background: black;
-	overflow: hidden;
-	border: solid 2px black;
-}
-
-#wheel figure:hover{
-    transform: scale(1.5, 1.5);
-}
-
-#wheel figure:nth-child(1) { transform: orbitX(0px) orbitY(0px);}
-#wheel figure:nth-child(2) { transform: orbitX(30px) orbitY(30px);}
-#wheel figure:nth-child(3) { transform: orbitX(60px) orbitY(60px);}
-#wheel figure:nth-child(4) { transform: orbitX(90px) orbitY(90px);}
-#wheel figure:nth-child(5) { transform: orbitX(120px) orbitY(120px);}
-#wheel figure:nth-child(6) { transform: orbitX(150px) orbitY(150px);}
-#wheel figure:nth-child(7) { transform: orbitX(180px) orbitY(180px);}
-
-img{
-	cursor: pointer;
-	transition: all .5s ease;
-    width: 240px;
-    height: auto;
-    position: absolute;
-    align-content: center;
-}
-
-img:hover{
-    transform: scale(1.2,1.2);
-}
-
-@keyframes orbital{
-	from{
-		transform: orbitX(0px);
-	}
-	to{
-		transform: orbitX(360px);
-	}
-}
-
-/* Ferris Wheel */

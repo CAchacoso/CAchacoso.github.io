@@ -6,7 +6,10 @@ html {
     margin: 0;
     height: auto;
     font: 300 11px/1.4 sans-serif;
-    background: #a2ecff;
+    background-image: linear-gradient(rgb(156, 224, 255), rgb(226, 243, 252));
+    background-color: rgb(156, 224, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: scroll;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -54,6 +57,13 @@ html {
   }
   /* Fonts */
 
+/* .parallax {
+    background-image: url("\images\SFStateBanner.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
 .home-page{
     position: absolute;
     left: 10%;
@@ -66,7 +76,7 @@ html {
         margin: 0;
         font-family: "Audiowide", sans-serif;
         font-weight: 250;
-        text-shadow: 3px 3px 3px #0000005c;
+        text-shadow: 3px 3px 3px #00000025;
         animation: fadeInDown 2s;
     }
 
@@ -102,7 +112,7 @@ html {
         font-size: 15px;
         font-weight: 750;
         letter-spacing: 3px;
-        text-shadow: 3px 3px 3px #0000005c;
+        text-shadow: 3px 3px 3px #00000015;
         animation: fadeInUp 2s;
 
         &::before {
@@ -155,13 +165,19 @@ html {
 .nav-center{
     margin: auto;
     width: auto;
-    padding-top: 25px;
-
+    padding-top: 10px;
 }
 .nav-bar{
-    width: 100%;
+    width: 40%;
     margin: auto;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    border-color: black;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px black;
     
     nav{
         display: inline-flex;
@@ -170,20 +186,20 @@ html {
         position: relative;
         top: 50%;
         width: 100%;
-        box-shadow: 2px #000000;
 
         a{
-            font-family: 'Helvetica Neue';
+            font-family: "Audiowide";
             font-size: 20px;
-            font-weight: 750;
-            text-shadow: 2px 2px 2px #00000050;
-            color: #ffffff;
+            font-weight: 500;
+            text-shadow: 3px 3px 3px #00000050;
+            color: rgb(0, 0, 0);
             display: block;
             line-height: 50px;
             height: 50px;
             position: relative;
             text-decoration: none;
             width: 100px;
+            padding: 15px;
 
             i{
                 transition: all -0.3s ease-out;
@@ -217,37 +233,32 @@ html {
         a.active{
             font-weight: 1000;
             text-decoration: underline;
-            color: #ffd000;
+            color: #ffd700;
         }
     }
 }
-    ul{
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        
-
-        li{
-            a{
-                padding: 10px 0;
-                display: block;
-                font-family: 'La Belle Aurore';
-                font-size: 20px;
-                line-height: 16px;
-
-                &:hover {
-                    color: #ffd700;
-                }
-            }
-        }
-    }
 
 /* Navigation Bar */
+
+.container {
+    width: auto;
+    height: auto;
+    border-radius: 0.5%;
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-right: solid 0.5px;
+    border-bottom: solid 0.5px;
+    box-shadow: 3px 3px 3px black;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(174, 228, 253), rgb(205, 237, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    animation: fadeInAnimation 3s;
+}
 
 @keyframes fadeInAnimation{
     0%{opacity: 0%;}
