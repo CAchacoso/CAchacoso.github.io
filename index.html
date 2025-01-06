@@ -1,51 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" initial-scale=1.0 />
-        <title>Christian Achacoso</title>
-        <link href="index.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>
+        Christian Achacoso
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-    <body>
-        <div class="parallax"></div>
-        <div class="nav-bar nav-center">
-            <nav>
-                <link>
-                    <a href="index.html" class=active>
-                        HOME
-                    </a>
-                </link>
-                <link>
-                    <a href="about.html" class="about-link">
-                        ABOUT
-                    </a>
-                </link>
-                <link>
-                    <a href="contact.html" class="contact-link">
-                        CONTACT
-                    </a>
-                </link>
-            </nav>
-        </div>
+<body>
 
-        <!-- <div class="container"></div> -->
-        <div class="container home-page">
-            <div class="text-zone w3-animate-top">
-                <h1>Hello World!
-                <br />
-                Christian Achacoso
-                </h1>
-                <h2>Computer Science Graduate
-                    <br />
-                    Nuro Command Center Operator             
-                </h2>
-                
+    <header class="header">
+        <a href="#home" class="logo">Christian
+        <span>Achacoso</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I am <span>Christian</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ullam nemo molestias reiciendis vitae ad, tempora ipsa eligendi mollitia quasi corrupti iure eveniet soluta? Pariatur enim vero quos quisquam sequi!</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/CAchacoso" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/christian-achacoso/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.twitch.tv/chrisachacha" target="_blank"><i class='bx bxl-twitch' ></i></a>
+                <a href="https://www.youtube.com/@Chrisachacha" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
-    </body>
+        
+        <div class="home-img">
+            <img src="image.jpg" alt="profile">
+        </div>
 
-    <script src="scripts.js"></script>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <div class="timeline-content">
+                            <h3>High School</h3>
+                            <p>
+                                I attended Dublin High School and Menlo-Atherton High School in California. 
+                                I transferred from Dublin High to Menlo-Atherton High in the middle of my third year and graduated in 2017.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <div class="timeline-content">
+                            <h3>University</h3>
+                            <p>
+                                I was admitted in Fall 2017 and graduated in May 2021 from San Francisco State University with a Bachelor of Science in Computer Science and a Minor in Mathematics.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <div class="timeline-content">
+                            <h3>SF Muni Internship</h3>
+                            <p>
+                                While in University, I was an Intern for the San Francisco Municipal Transportation Agency (SFMTA) working on various projects for the City of San Francisco and its transit system.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <div class="timeline-content">
+                            <h3>Waymo</h3>
+                            <p>
+                                After graduating from University, I was offered a contract position through Collabera, Inc. as a Software Quality Operations Associate to support the self-driving robotaxi company, Waymo. My job was to triage and provide feedback with the collected data from the Waymo cars to improve safety and better driving behavior.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <div class="timeline-content">
+                            <h3>Nuro</h3>
+                            <p>
+                                I currently work as Command Center Operator for Nuro, a self-driving software company looking to better everyday life with robotics. My job is to overlook and teach our robots better driving behavior through test requests and data collection.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>UI/UX Design</h4>
+                    <p>
+                        Throughout my time in University, I grew an interest in UI/UX Design. I took a class in Web Development and Human-Computer Interaction.
+                        The Web Development class introduced me to <span>HTML, CSS, JavaScript and PHP</span>, where we designed our own websites/portfolios. 
+                        In my Human-Computer Interaction class, I learned how to design websites that are user friendly and what aspects of a website are more appealing to the human eye.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Machine Learning</h4>
+                    <p>
+                        My interest in Machine Learning and Artifical Intelligence has grown ever since I joined the Autonomous Driving Vehicle industry with Waymo and Nuro. 
+                        I have learned to develop projects that allow the computer to think on its own, such as pedicting stock prices and multiple calculator variations.
+                        The main language that I use for Machine Learning is <span>Python</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Data Analysis</h4>
+                    <p>
+                        To achieve my Mathematics Minor, I was required to take some data and statistical analysis courses.
+                        These courses have introduced me to <span>Python, R and MATLAB</span>. 
+                        Using these languages, I have created projects that have visualized data from collected and random data sets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Quality Testing</h4>
+                    <p>
+                        In my last year of University, I was the main point of contact for quality testing of my team's application.
+                        While I have contributed to the development of our application, I highly enjoyed testing all of the applciation's functionalities, creating
+                        test cases and providing feedback to the team on any improvements or  updates.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="projects" id="projects">
+
+        <div class="projects-box">
+            <h2 class="heading">Projects</h2>
+
+            <div class="wrapper">
+                
+                <div class="project-item">
+                    <img src="image1.jpg" alt="project1">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis non incidunt quae facere explicabo tempora, ipsa tempore ullam cumque quibusdam dicta atque magni ab, veritatis illum architecto pariatur, similique aut?</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="image2.jpg" alt="project2">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis non incidunt quae facere explicabo tempora, ipsa tempore ullam cumque quibusdam dicta atque magni ab, veritatis illum architecto pariatur, similique aut?</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="image3.jpg" alt="project3">
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis non incidunt quae facere explicabo tempora, ipsa tempore ullam cumque quibusdam dicta atque magni ab, veritatis illum architecto pariatur, similique aut?</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/CAchacoso" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/christian-achacoso/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.twitch.tv/chrisachacha" target="_blank"><i class='bx bxl-twitch' ></i></a>
+            <a href="https://www.youtube.com/@Chrisachacha" target="_blank"><i class='bx bxl-youtube' ></i></a>
+        </div>
+        
+        <ul class="list">
+            
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+        <p class="copyright">
+            © Christian Achacoso | All Rights Reserved
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
 </html>
