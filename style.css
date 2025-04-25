@@ -254,11 +254,11 @@ img {
 @keyframes words {
     0%,
     20% {
-        content: "UI/UX Designer";
+        content: "UI/UX Engineer";
     }
     21%,
     40% {
-        content: "Web Designer";
+        content: "Web Developer";
     }
     41%,
     60% {
@@ -266,7 +266,7 @@ img {
     }
     61%,
     80% {
-        content: "Web Developer";
+        content: "Software Developer";
     }
     81%,
     100% {
@@ -506,13 +506,6 @@ img {
     margin-bottom: 5rem;
 }
 
-.project-box img {
-    width: 15rem;
-    border-radius: 50%;
-    border: 3px solid var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -549,7 +542,7 @@ img {
 }
 
 .project-item p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #star {
