@@ -9,6 +9,7 @@
     </title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="Website Logo.jpg">
 </head>
 
 <body>
@@ -21,9 +22,9 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#experience">Experience</a>
-            <a href="#services">Services</a>
+            <!-- <a href="#experience">Experience</a> -->
             <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -36,17 +37,9 @@
             <h3 class="text-animation">I'm a <span></span></h3>
             <p class="text-animation1">
                 <span>
-                    Eager to learn and explore with a developing foundation in coding and problem-solving, I thrive on creating efficient and impactful solutions to complex challenges. 
-                    Whether collaborating on a team or tackling projects independently, I bring enthusiasm, adaptability, and a commitment to excellence to everything I do.
+                    Eager and dedicated to learn and explore with a developing foundation in coding and problem-solving!
                 </span>
             </p>
-
-            <div class="social-icons">
-                <a href="https://github.com/CAchacoso" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/christian-achacoso/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.youtube.com/@Chrisachacha" target="_blank"><i class='bx bxl-youtube' ></i></a>
-                <a href="https://www.twitch.tv/chrisachacha" target="_blank"><i class='bx bxl-twitch' ></i></a>
-            </div>
 
             <div class="btn-group">
                 <a href="Christian Achacoso Resume.pdf" class="btn" target="_blank">Hire</a>
@@ -56,11 +49,15 @@
         
         <div class="home-img">
             <img src="image.jpg" width:="350" height="350">
+            <div class="social-icons">
+                <a href="https://github.com/CAchacoso" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/christian-achacoso/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
         </div>
 
     </section>
 
-    <section class="experience" id="experience">
+    <!-- <section class="experience" id="experience">
         <h2 class="heading">Experience</h2>
 
         <div class="timeline-items">
@@ -134,6 +131,51 @@
             </div>
 
         </div>
+    </section> -->
+
+    <section class="projects" id="projects">
+
+        <div class="projects-box">
+            <h2 class="heading">Projects</h2>
+
+            <div class="project-container">
+                
+                <a href="https://github.com/CAchacoso/DataVisualization" target="_blank">
+                <div class="project-item">    
+                    <img src="Spiral.jpg" alt="spiral" width="150px" height="150px">
+                    <h3>Data Visualization</h3>
+                    <p>Program that will visualize data from a given CSV file in a multi-dimensional plane. 
+                    <br>
+                    <br> 
+                       In this example, I am given a CSV of a data set and have visualized the data onto a multi-dimensional plane.
+                    </p>
+                </div>
+                </a>
+
+                <div class="project-item">
+                    <img src="newFolder.jpg" alt="project2" width="150px" height="150px">
+                    <h3>CSV Folder Creator</h3>
+                    <p>Script that reads a CSV file and creates folders within its directory and names them based on their given attributes, while omitting folders that have already been made.
+                    </p>
+                </div>
+
+                
+                <a href="https://github.com/CAchacoso/myProductWebsite" target="_blank">
+                <div class="project-item">
+                    <img src="GlowAura.jpg" alt="glowaura" width="150px" height="150px">
+                    <h3>GlowAura</h3>
+                    <p>
+                        Fully AI-generated Website Template
+                        <br>
+                        <br>
+                        Shows how AI can be efficiently used to build the foundation of a website or project, but will need to be designed and engineered by the mind of a human.
+                    </p>
+                </div>
+                </a>
+
+            </div>
+        </div>
+
     </section>
 
     <section class="services" id="services">
@@ -177,51 +219,6 @@
         
     </section>
 
-    <section class="projects" id="projects">
-
-        <div class="projects-box">
-            <h2 class="heading">Projects</h2>
-
-            <div class="project-container">
-                
-                <a href="https://github.com/CAchacoso/DataVisualization" target="_blank">
-                <div class="project-item">    
-                    <img src="Spiral.jpg" alt="spiral" width="150px" height="150px">
-                    <h2>Data Visualization</h2>
-                    <p>Program that will visualize data from a given CSV file in a multi-dimensional plane. 
-                    <br>
-                    <br> 
-                       In this example, I am given a CSV of a data set and have visualized the data onto a multi-dimensional plane.
-                    </p>
-                </div>
-                </a>
-
-                <div class="project-item">
-                    <img src="newFolder.jpg" alt="project2" width="150px" height="150px">
-                    <h2>CSV Folder Creator</h2>
-                    <p>Script that reads a CSV file and creates folders within its directory and names them based on their given attributes, while omitting folders that have already been made.
-                    </p>
-                </div>
-
-                
-                <a href="https://github.com/CAchacoso/myProductWebsite" target="_blank">
-                <div class="project-item">
-                    <img src="GlowAura.jpg" alt="glowaura" width="150px" height="150px">
-                    <h2>GlowAura</h2>
-                    <p>
-                        Fully AI-generated Website Template
-                        <br>
-                        <br>
-                        Shows how AI can be efficiently used to build the foundation of a website or project, but will need to be designed and engineered by the mind of a human.
-                    </p>
-                </div>
-                </a>
-
-            </div>
-        </div>
-
-    </section>
-
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
@@ -248,8 +245,6 @@
         <div class="social">
             <a href="https://github.com/CAchacoso" target="_blank"><i class='bx bxl-github' ></i></a>
             <a href="https://www.linkedin.com/in/christian-achacoso/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://www.youtube.com/@Chrisachacha" target="_blank"><i class='bx bxl-youtube' ></i></a>
-            <a href="https://www.twitch.tv/chrisachacha" target="_blank"><i class='bx bxl-twitch' ></i></a>
         </div>
         
         <ul class="list">

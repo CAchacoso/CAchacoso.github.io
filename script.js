@@ -23,3 +23,26 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+window.addEventListner = ("load", (event) => {
+    let options = {
+        rootMargin: "0px",
+        threshold: 0.8
+    };
+
+    const intersectionHandler = function(entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.8) {
+                entry.target.classList.remove("scrollFadeOut");
+                entry.target.classList.add("scrollFadeIn");
+            } else {
+                entry.target.classList.remove("scrollFadeIn");
+                entry.target.classList.add("scrollFadeOut");
+            }
+        });
+    };
+    let observer = new IntersectionObserver(intersectionHandler, options);
+    document.querySelectorAll(".section").forEach((row, index) => {
+        observer.observe(row);
+    });
+});
