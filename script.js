@@ -24,25 +24,14 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-window.addEventListner = ("load", (event) => {
-    let options = {
-        rootMargin: "0px",
-        threshold: 0.8
-    };
-
-    const intersectionHandler = function(entries, observer) {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting && entry.intersectionRatio > 0.8) {
-                entry.target.classList.remove("scrollFadeOut");
-                entry.target.classList.add("scrollFadeIn");
-            } else {
-                entry.target.classList.remove("scrollFadeIn");
-                entry.target.classList.add("scrollFadeOut");
+$(document).ready(function(){
+    $window.scroll(function(){
+        $('.hidden').each(function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if(bottom_of_window > bottom_of_object){
+                $(this).animate({'opacity':'1'},1500)
             }
         });
-    };
-    let observer = new IntersectionObserver(intersectionHandler, options);
-    document.querySelectorAll(".section").forEach((row, index) => {
-        observer.observe(row);
     });
 });
