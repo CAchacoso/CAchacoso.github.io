@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Copperplate";
+    font-family: "Trirong";
 }
 
 :root {
@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ body {
 .logo {
     font-size: 3rem;
     color: var(--text-color);
-    font-weight: 800;
+    font-weight: 700;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .navbar a {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -107,9 +107,11 @@ p span {
     color: var(--main-color);
 }
 
-.home-content p {
-    font-size: 1.75rem;
-    font-weight: 600;
+.home-content h1 {
+    font-size: 7rem;
+    font-weight: 650;
+    margin-top: 1.5rem;
+    line-height: 1;
 }
 
 .home-content h3 {
@@ -118,11 +120,9 @@ p span {
     font-size: 3.5rem;
 }
 
-.home-content h1 {
-    font-size: 7rem;
-    font-weight: 700;
-    margin-top: 1.5rem;
-    line-height: 1;
+.home-content p {
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
 .home-img {
@@ -519,7 +519,8 @@ p span {
 .contact form textarea {
     width: 100%;
     padding: 2.5rem;
-    font-size: 1.8rem;
+    font-family: "Trirong";
+    font-size: 1.7rem;
     color: var(--text-color);
     background: var(--bg-color);
     border-radius: 2rem;
@@ -530,6 +531,10 @@ p span {
 
 .contact form .btn {
     margin-top: 2rem;
+}
+
+.contact form .btn:hover {
+    background-color: white;
 }
 
 .footer {
