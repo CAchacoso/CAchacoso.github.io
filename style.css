@@ -159,6 +159,7 @@ p span {
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
     color: var(--main-color);
     transition: 0.3s ease-in-out;
 }
@@ -178,6 +179,23 @@ p span {
     background: var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn1 {
+    display: inline-block;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-right: 15px;
+    margin-top: 15px;
+    background: var(--second-bg-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
     color: black;
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
@@ -188,7 +206,15 @@ p span {
 
 .btn:hover {
     transform: scale(1.2);
-    background-color: #cfcfc9;
+    background-color: var(--second-bg-color);
+    border: 1px solid black;
+    color: black;
+}
+
+.btn1:hover {
+    transform: scale(1.2);
+    background-color: var(--main-color);
+    color: white;
 }
 
 .text-animation {
@@ -356,75 +382,6 @@ p span {
     width: 15px;
 }*/
 
-.services {
-    background-color: var(--bg-color);
-    color: black;
-}
-
-.services h2 {
-    margin-bottom: 5rem;
-    color: var(--text-color);;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.service-box {
-    background-color: var(--second-bg-color);
-    width: max/3px;
-    height: 425px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-
-.service-box:hover {
-    background: white;
-    color: black;
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-}
-
-.service-box .service-info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
-}
-
-.service-info h4 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
-}
-
-.service-info p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
-}
-
-.service-info span {
-    font-size: 1.5rem;
-    font-weight: 900;
-    font-style: italic;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
-    color: black;
-}
-
 .projects {
     background-color: var(--second-bg-color);
 }
@@ -445,7 +402,6 @@ p span {
 }
 
 .project-box {
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -474,7 +430,14 @@ p span {
 
 .project-item:hover {
     border: 3px solid var(--main-color);
-    transform: translateY(-10px)scale(1.03);
+    transform: scale(1.03);
+    border: 3px solid beige;
+}
+
+.project-item img {
+    height: 150px;
+    width: 200px;
+    border-radius: 3%;
 }
 
 .project-item h2 {
@@ -486,9 +449,74 @@ p span {
     margin: 0 5rem;
 }
 
-#star {
-    color: gold;
-    font-size: 2rem;
+.services {
+    background-color: var(--bg-color);
+    color: black;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+    color: var(--text-color);;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.service-box {
+    background-color: white;
+    width: max/3px;
+    height: 425px;
+    border-radius: 3rem;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    background: white;
+    color: black;
+    border: 2.5px solid var(--main-color);
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+
+.service-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+    align-self: center;
+}
+
+.service-info p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    text-align: center;
+}
+
+.service-info span {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    color: black;
 }
 
 .contact {
@@ -735,7 +763,7 @@ p span {
         align-items: center;
         gap: 2rem;
     }
-
+/*
     .service-box {
         margin: auto;
         width: 300px;
@@ -745,7 +773,7 @@ p span {
         cursor: pointer;
         transition: 0.4s ease-in-out;
     }
-
+*/
 }
 
 @media(max-width:991px) {
