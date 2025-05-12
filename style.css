@@ -10,7 +10,7 @@
 }
 
 :root {
-    --bg-color: #bdc3c7;
+    --bg-color: white;
     --second-bg-color: #2c3e50;
     --text-color: #34495e;
     --second-text-color: #ecf0f1;
@@ -34,7 +34,7 @@ body {
     width: 100%;
     height: 100px;
     padding: 4rem 12% 4rem;
-    background: var(--main-color);
+    background: var(--text-color);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -684,7 +684,6 @@ p span {
         align-items: center;
         width: 4.5rem;
         height: 4.5rem;
-        background: transparent;
         font-size: 2.5rem;
         border-radius: 50%;
         margin: 3rem 1.5rem 3rem 0;
@@ -849,6 +848,52 @@ p span {
 
     .home-img img {
         width: 56vw;
+    }
+
+    .project-container {
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
+
+    .project-box {
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .project .heading {
+        margin-bottom: 5rem;
+    }
+    
+    .project-box img {
+        width: 15rem;
+        border-radius: 50%;
+    }
+    
+    .project-item {
+        min-height: 350px;
+        border-radius: 2rem;
+        border: 5px solid transparent;
+        margin-bottom: 5rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        transition: 0.4s ease-in-out;
+    }
+        
+    .project-item h2 {
+        font-size: 3rem;
+    }
+    
+    .project-item p {
+        font-size: 2rem;
     }
 
     .services h2 {
@@ -1044,10 +1089,10 @@ p span {
     }
     
     .project-item {
-        min-height: 450px;
-        max-width: 450px;
+        min-height: 350px;
         border-radius: 2rem;
-        margin: 0 2rem;
+        border: 5px solid transparent;
+        margin: 0 5rem 5rem;
         cursor: pointer;
         display: flex;
         flex-direction: column;
