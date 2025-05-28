@@ -27,6 +27,38 @@ body {
     color: var(--text-color);
 }
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0;    
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    0%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.75s;
+}
+
+.fade-down {
+    animation-name: fadeDown;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
 .header {
     position: fixed;
     top: 0;

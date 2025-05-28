@@ -19,6 +19,10 @@ window.onscroll = () => {
     })
 }
 
+window.onbeforeunload = function(){
+    window.scrollTo(0, 0);
+}
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
