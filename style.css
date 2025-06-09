@@ -359,7 +359,7 @@ p span {
 }
 
 .projects h3 {
-    color: black;
+    color: var(--text-color);
     font-size: 3rem;
 }
 
