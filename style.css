@@ -178,12 +178,12 @@ p span {
 }
 
 .social-icons {
-    margin-left: 100px;
+    margin: auto;
+    position: relative;
 }
 
 .social-icons a{
     display: inline-flex;
-    margin: 15px;
     justify-content: center;
     align-items: center;
     width: 4.5rem;
@@ -238,13 +238,13 @@ p span {
 }
 
 .btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: var(--bg-color);
     color: var(--second-bg-color);
 }
 
 .btn1:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: var(--second-bg-color);
     color: var(--second-text-color);
 }
@@ -285,7 +285,7 @@ p span {
 @keyframes words {
     0%,
     20% {
-        content: "UI/UX Engineer";
+        content: "Web Designer";
     }
     21%,
     40% {
@@ -293,7 +293,7 @@ p span {
     }
     41%,
     60% {
-        content: "Data Analyst";
+        content: "Quality Analyst";
     }
     61%,
     80% {
@@ -301,7 +301,7 @@ p span {
     }
     81%,
     100% {
-        content: "Software Engineer";
+        content: "Software QA Engineer";
     }
 }
 
@@ -476,6 +476,14 @@ p span {
     line-height: 1.7;
     margin: auto;
     text-align: center;
+}
+
+.service-info li {
+    font-size: 1.8rem;
+    font-weight: 550;
+    max-height: 100px;
+    line-height: 2;
+    margin: auto;
 }
 
 .service-info span {
@@ -726,7 +734,7 @@ p span {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 1.2rem;
         margin: auto;
     }
 
