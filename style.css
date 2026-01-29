@@ -417,17 +417,17 @@ p span {
     color: black;
 }
 
-.services {
+.skills {
     background-color: var(--bg-color);
     color: black;
 }
 
-.services h2 {
+.skills h2 {
     margin-bottom: 5rem;
     color: var(--text-color);
 }
 
-.services-container {
+.skills-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -435,7 +435,7 @@ p span {
     gap: 5rem;
 }
 
-.service-box {
+.skill-box {
     background-color: white;
     width: max/3px;
     height: 425px;
@@ -446,39 +446,39 @@ p span {
     transition: 0.4s ease-in-out;
 }
 
-.service-box:hover {
+.skill-box:hover {
     color: black;
     transform: scale(1.03);
     transition: 0.5s ease-in-out;
     box-shadow: 1px 3px 8px black;
 }
 
-.service-info {
+.skill-info {
     display: flex;
     flex-direction: column;
-    max-height: 200px;
+    max-height: 250px;
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
 }
 
-.service-info h4 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
-    align-self: center;
-}
-
-.service-info p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
+.skill-info h4 {
     margin: auto;
     text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.5;
 }
 
-.service-info span {
+.skill-info li {
+    font-size: 1.7rem;
+    font-weight: 500;
+    max-height: 200px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.skill-info span {
     font-size: 1.5rem;
     font-weight: 900;
     font-style: italic;
@@ -654,7 +654,7 @@ p span {
         font-size: 55%;
     }
     
-    .services-container {
+    .skills-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -730,7 +730,7 @@ p span {
         margin: auto;
     }
 
-    .services-container {
+    .skills-container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         justify-content: center;
@@ -738,7 +738,7 @@ p span {
         gap: 2rem;
     }
 
-    .service-box {
+    .skill-box {
         margin: auto;
         width: 300px;
         height: 500px;
@@ -928,15 +928,15 @@ p span {
         font-size: 2rem;
     }
 
-    .services h2 {
+    .skills h2 {
         margin-bottom: 3rem;
     }
 
-    .services-container {
+    .skills-container {
         grid-template-columns: repeat(1,1fr);
     }
 
-    .service-box {
+    .skill-box {
         margin: auto;
         width: 100%;
         height: 250px;
@@ -1087,7 +1087,7 @@ p span {
         margin: 5rem 0;
     }
 
-    .service-box {
+    .skill-box {
         height: 350px;
         border-radius: 3rem;
         border: 5px solid transparent;
