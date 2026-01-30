@@ -155,9 +155,14 @@ p span {
 
 .home-content p {
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 200;
 }
 
+.home-content p span {
+    color: var(--main-color);
+    font-size: 1.75rem;
+    font-weight: 900;
+}
 .home-img {
     position: relative;
     top: 3rem;
@@ -479,11 +484,10 @@ p span {
 }
 
 .skill-info span {
-    font-size: 1.5rem;
-    font-weight: 900;
-    font-style: italic;
-    max-height: 100px;
-    line-height: 1.7;
+    font-size: 1.7rem;
+    font-weight: 1000;
+    max-height: 200px;
+    line-height: 1.5;
     margin: auto;
     color: black;
 }
