@@ -1,6 +1,5 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
@@ -18,6 +17,28 @@ window.onscroll = () => {
         }
     })
 }
+
+const sections = document.querySelectorAll(".fade-section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const section = entry.target;
+
+    if (entry.isIntersecting) {
+      section.classList.add("visible");
+      section.classList.remove("faded");
+    } else {
+      if (section.classList.contains("visible")) {
+        section.classList.add("faded");
+      }
+    }
+  });
+}, {
+  threshold: 0.4
+});
+
+sections.forEach(section => observer.observe(section));
+
 
 window.onbeforeunload = function(){
     window.scrollTo(0, 0);

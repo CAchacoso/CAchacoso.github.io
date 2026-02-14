@@ -111,6 +111,23 @@ section {
     padding: 10rem 12% 10rem;
 }
 
+.fade-section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-section.faded {
+  opacity: 0.4;
+  filter: blur(5px);
+  transition: opacity 1s ease-in-out;
+}
+
+
 .home {
     background-color: var(--bg-color);
     display: flex;
