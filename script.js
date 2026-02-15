@@ -2,6 +2,9 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let navLinks = document.querySelectorAll('header nav a');
 
+window.history.scrollRestoration = "manual";
+window.scrollTo(0, 0);
+
 window.onscroll = () => {
     sections.forEach(sec => {
         let top  = window.scrollY;
