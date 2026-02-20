@@ -42,7 +42,6 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-
 window.onbeforeunload = function(){
     window.scrollTo(0, 0);
 }
@@ -51,3 +50,8 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // stops default form submission
+  console.log("Form submitted!");
+});

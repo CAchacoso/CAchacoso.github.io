@@ -201,9 +201,11 @@
 
             emailjs.sendForm("service_z2n8uzu", "template_mquqpkd", this)
             .then(() => {
+                status.style.color = "green"
                 status.textContent = "Message sent!";
                 form.reset();
             }, (error) => {
+                status.style.color = "red"
                 status.textContent = "Oops! Something went wrong.";
                 console.error(error);
             });
