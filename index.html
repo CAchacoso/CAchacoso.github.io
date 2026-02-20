@@ -150,23 +150,25 @@
     <!-- CONTACT -->
     <section class="contact fade-section" id="contact">
         <h2 class="heading">Contact Me</h2>
+        <form action="" id= contact-form">
 
-        <form action="">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
+                    <input type="text" name="from_name" placeholder="Name" required />
+                    <input type="email" name="reply_to" placeholder="Email" required />
                 </div>
                 <div class="input-box">
-                    <input type="tel" placeholder="(888) 888-8888" required>
-                    <input type="text" placeholder="Subject" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" />
+                    <input type="text" name="subject" placeholder="Subject of Your Message" required />
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
             </div>
+
+            <p id="status"></p>
         </form>
     </section>
 
@@ -183,6 +185,30 @@
     </footer>
     
     <script src="script.js"></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("7P2pquXD4Jnp3ytMp"); // replace with your EmailJS public key
+        })();
+
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("status");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            status.textContent = "Sending...";
+
+            emailjs.sendForm("service_z2n8uzu", "template_mquqpkd", this)
+            .then(() => {
+                status.textContent = "Message sent!";
+                form.reset();
+            }, (error) => {
+                status.textContent = "Oops! Something went wrong.";
+                console.error(error);
+            });
+        });
+    </script>
 </body>
 
 </html>
