@@ -578,6 +578,17 @@ span {
     color: white;
 }
 
+#contact-container.sent-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* adjust as needed */
+  font-size: 1.5rem;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
 .footer {
     position: relative;
     bottom: 0;

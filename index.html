@@ -151,21 +151,23 @@
     <section class="contact fade-section" id="contact">
         <h2 class="heading">Contact Me</h2>
         <form action="" id="contact-form">
-
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="from_name" placeholder="Name" required />
-                    <input type="email" name="reply_to" placeholder="Email" required />
-                    <input type="tel" name="phone" placeholder="Phone Number (Optional)" />
+            
+            <div id="contact-container">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="email" name="reply_to" placeholder="Email" required />
+                        <input type="tel" name="phone" placeholder="Phone Number (Optional)" />
+                    </div>
                 </div>
-            </div>
 
-            <div class="input-group-2">
-                <div class="input-box">
-                    <input type="text" name="subject" placeholder="Subject of Your Message" required />
+                <div class="input-group-2">
+                    <div class="input-box">
+                        <input type="text" name="subject" placeholder="Subject of Your Message" required />
+                    </div>
+                    <textarea name="message" cols="70" rows="10" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
                 </div>
-                <textarea name="message" cols="70" rows="10" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
             </div>
 
             <p id="status"></p>
@@ -194,20 +196,18 @@
         })();
 
         const form = document.getElementById("contact-form");
-        const status = document.getElementById("status");
+        const container = document.getElementById("contact-container");
 
         form.addEventListener("submit", function(event) {
             event.preventDefault();
-            status.textContent = "Sending...";
 
             emailjs.sendForm("service_y5x9vi2", "template_mquqpkd", this)
             .then(() => {
-                status.style.color = "green"
-                status.textContent = "Message sent!";
+                container.innerHTML = "Message sent! Thank you for reaching out!";
+                container.classList.add("sent-message");
                 form.reset();
             }, (error) => {
-                status.style.color = "red"
-                status.textContent = "Oops! Something went wrong.";
+                alert("Oops! Something went wrong. Please try again.")
                 console.error(error);
             });
         });
