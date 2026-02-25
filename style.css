@@ -546,6 +546,7 @@ span {
 
 .contact form .input-box {
     display: flex;
+    gap: 2.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -556,12 +557,12 @@ span {
     padding: 2.5rem;
     font-family: "Trirong";
     font-size: 1.7rem;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
     background: var(--bg-color);
     border-radius: 2rem;
     border: 3px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
+    margin: 1rem 0;
 }
 
 .contact form .btn {

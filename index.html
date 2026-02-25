@@ -150,25 +150,26 @@
     <!-- CONTACT -->
     <section class="contact fade-section" id="contact">
         <h2 class="heading">Contact Me</h2>
-        <form action="" id= "contact-form">
+        <form action="" id="contact-form">
 
             <div class="input-group">
                 <div class="input-box">
                     <input type="text" name="from_name" placeholder="Name" required />
                     <input type="email" name="reply_to" placeholder="Email" required />
-                </div>
-                <div class="input-box">
-                    <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" />
-                    <input type="text" name="subject" placeholder="Subject of Your Message" required />
+                    <input type="tel" name="phone" placeholder="Phone Number (Optional)" />
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <div class="input-box">
+                    <input type="text" name="subject" placeholder="Subject of Your Message" required />
+                </div>
+                <textarea name="message" cols="70" rows="10" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </div>
 
             <p id="status"></p>
+    
         </form>
     </section>
 
@@ -189,7 +190,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function(){
-            emailjs.init("7P2pquXD4Jnp3ytMp"); // replace with your EmailJS public key
+            emailjs.init("I579y1pZwApu6-Ysl"); // replace with your EmailJS public key
         })();
 
         const form = document.getElementById("contact-form");
@@ -199,7 +200,7 @@
             event.preventDefault();
             status.textContent = "Sending...";
 
-            emailjs.sendForm("service_z2n8uzu", "template_mquqpkd", this)
+            emailjs.sendForm("service_y5x9vi2", "template_mquqpkd", this)
             .then(() => {
                 status.style.color = "green"
                 status.textContent = "Message sent!";
