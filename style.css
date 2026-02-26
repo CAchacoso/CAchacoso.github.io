@@ -536,31 +536,30 @@ span {
 }
 
 .contact form {
-    display: flex;
-    align-items: center;
+    display: block;
     justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
+    gap: 1rem;
+    margin: 3rem auto;
     text-align: center;
 }
 
 .contact form .input-box {
-    display: flex;
-    gap: 2.5rem;
+    width: 100%;
+    display: inline-flex;
+    gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.contact form .input-box input,
+.contact form input,
 .contact form textarea {
     width: 100%;
-    padding: 2.5rem;
+    padding: 2rem;
     font-family: "Trirong";
     font-size: 1.7rem;
     color: rgb(0, 0, 0);
     font-weight: 600;
     background: var(--bg-color);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: 3px solid var(--main-color);
     margin: 1rem 0;
 }
@@ -576,6 +575,11 @@ span {
     background-color: var(--second-bg-color);
     border: 10px;
     color: white;
+}
+
+#contact-container {
+    display: inline-flex;
+    justify-content: center;
 }
 
 #contact-container.sent-message {
