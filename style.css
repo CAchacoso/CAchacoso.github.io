@@ -582,7 +582,7 @@ span {
     justify-content: center;
 }
 
-#contact-container.sent-message {
+#contact-form.sent-message {
   display: flex;
   justify-content: center;
   align-items: center;

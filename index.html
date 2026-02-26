@@ -156,7 +156,7 @@
                 <input type="text" name="name" placeholder="Name" required />
                 <input type="email" name="reply_to" placeholder="Email" required />
             </div>
-            <div>     
+            <div>
                 <textarea name="message" cols="50" rows="10" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </div>
@@ -192,9 +192,8 @@
 
             emailjs.sendForm("service_y5x9vi2", "template_mquqpkd", this)
             .then(() => {
-                container.innerHTML = "Message sent! Thank you for reaching out!";
-                container.classList.add("sent-message");
-                form.reset();
+                form.innerHTML = "Message sent! Thank you for reaching out!";
+                form.classList.add("sent-message");
             }, (error) => {
                 alert("Oops! Something went wrong. Please try again.")
                 console.error(error);
